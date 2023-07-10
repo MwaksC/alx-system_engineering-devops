@@ -1,1 +1,1 @@
-ptoject 0x00-shell_basics
+project 0x00-shell_basics
