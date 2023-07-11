@@ -1,0 +1,4 @@
+#!/bin/bash
+FILENAME="iacta"
+last_line=$(tail -n 1 "$FILENAME")
+echo "$last_line" >> "$FILENAME"
