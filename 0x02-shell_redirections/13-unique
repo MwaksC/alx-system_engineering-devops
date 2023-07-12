@@ -1,20 +1,2 @@
 #!/bin/bash
-
-# Read the list of words from input
-read -r -a words
-
-# Create an associative array to store word frequencies
-declare -A frequency
-
-# Iterate over the words and count their occurrences
-for word in "${words[@]}"; do
-  ((frequency[$word]++))
-done
-
-# Iterate over the words again and print the ones with a frequency of 1
-for word in "${words[@]}"; do
-  if ((frequency[$word] == 1)); then
-    echo "$word"
-  fi
-done | sort
-
+sort | uniq -u
